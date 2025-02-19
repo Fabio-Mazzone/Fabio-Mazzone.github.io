@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentazione</title>
+    <title>Presentazione Progetto Rete Aziendale</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            text-align: center;
         }
-        a {
-            color: #007BFF;
+        h1 {
+            color: #2c3e50;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #3498db;
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
         }
-        a:hover {
-            text-decoration: underline;
+        .button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Benvenuto!</h1>
-        <p>Ciao, mi chiamo Fabio Raffaele Mazzone. Sono un appassionato di tecnologia e networking, con esperienza nella progettazione e gestione di reti informatiche.</p>
-        <p>Se sei interessato, puoi dare un'occhiata a uno dei miei progetti riguardanti il networking:</p>
-        <p><a href="networking.html" target="_blank">Progetto di Networking</a></p>
+        <h1>Progetto di Rete Aziendale</h1>
+        <p>Questo progetto descrive la progettazione e l'implementazione di una rete aziendale suddivisa in quattro sedi, garantendo sicurezza, efficienza e prestazioni elevate. 
+           Ogni sede è configurata con VLAN dedicate per separare i vari reparti e ottimizzare la gestione del traffico dati.</p>
+        
+        <a href="networking.html" class="button">Visualizza il Progetto</a>
     </div>
 </body>
 </html>
-
