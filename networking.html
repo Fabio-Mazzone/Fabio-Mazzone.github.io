@@ -3,35 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progetto di Networking</title>
+    <title>Dettagli Progetto di Networking</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f4f4;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            margin: auto;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+        }
+        p {
+            color: #555;
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 16px;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 10px;
             margin-top: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            color: white;
+            background-color: #3498db;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Progetto di Networking</h1>
-        <p>Questo progetto riguarda la progettazione e l'implementazione di una rete informatica ottimizzata per garantire sicurezza e alte prestazioni.</p>
-        <img src="immagine_progetto.jpg" alt="Schema del progetto di networking" onerror="this.onerror=null; this.src='placeholder.jpg';">
+        <h1>Dettagli del Progetto di Networking</h1>
+        <p>Questa rete aziendale è suddivisa in quattro blocchi principali per ottimizzare la gestione dei dati e migliorare la sicurezza:</p>
+        
+        <h2>Sede Risorse Umane</h2>
+        <p>Questa sede è composta da due VLAN: una per gli impiegati che gestiscono i contratti e una per la gestione dei lavoratori (colloqui e assunzioni).</p>
+        
+        <h2>Sede Produzione</h2>
+        <p>Due VLAN suddividono il reparto di produzione in due sezioni distinte, ciascuna sotto il controllo di un capo reparto.</p>
+        
+        <h2>Amministrazione</h2>
+        <p>Il cuore amministrativo dell'azienda ospita un server centrale configurato con DHCP e un servizio DNS. Un firewall gestisce la sicurezza e ottimizza la banda di rete.</p>
+        
+        <h2>Punto Vendita / Gestione Clienti</h2>
+        <p>Qui vengono utilizzate VLAN per separare i commessi dai clienti. La clientela può connettersi alla rete tramite cavo o connessione wireless.</p>
+        
+        <img src="immagine_progetto.JPG" alt="Schema del progetto di networking" onerror="this.onerror=null; this.src='placeholder.jpg';">
+        
+        <a href="index.html" class="button">Torna alla Presentazione</a>
     </div>
 </body>
 </html>
